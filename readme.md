@@ -1,4 +1,4 @@
-# Memorry card game
+# Card Matcher
 
 Just a simple memory game not too complex built with HTML, CSS and JS. It is just about flipping cards to matching the correct pair of images. Then the levels increases as the player complete the level.
 
