@@ -10,6 +10,6 @@ Just a simple memory game not too complex built with HTML, CSS and JS. It is jus
 - It adjusts to any device screen to allow responsive play.
 
 ## Credits
-- I give uptmost credit for all background images from [WallpaperCave}(wallpapercave.com]
+- I give uptmost credit for all background images from [WallpaperCave](wallpapercave.com)
 - All logos used in the game was gotten from [Icons Mafia in IconScout](https://iconscout.com/contributors/icon-mafia)
 - And ai to make the levels better i was only able to make levels one and two but I used ai to make it better to make it just have a certain logic of increament.
