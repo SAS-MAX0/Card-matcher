@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #a8c9e6, #bcd4dc);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 2fr));
+  gap: 20px; 
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px; 
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+  width: 70%; 
+  max-width: 500px; 
+  max-height: 1000px;
+}
+
+.card {
+  width: 100%;
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.2); 
+  border: 1px solid rgba(25, 24, 24, 0.9);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); 
+}
+
+.card img {
+  width: 80%;
+  height: 80%;
+  display: none; 
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card.flipped img {
+  display: block;
+}
+
+.card.matched {
+  background-color: #4b9b4e; 
+  color: #fff;
+  cursor: default; 
+  transform: scale(1.1); 
+  transition: transform 0.3s ease;
+}
+
+.theme-selector {
+  margin: 20px;
+  padding-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 21px;
+  position: relative;
+}
+
+.theme-selector select {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-selector select:hover {
+  background-color: #f0f0f0; 
+}
+
+.restart {
+  margin-top: 20px;
+  background-color: #595c59;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px; 
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.restart:hover {
+  background-color: #4a4d4a;
+  transform: scale(1.05);
+}
